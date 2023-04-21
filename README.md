@@ -36,13 +36,13 @@ fi
 
 The first step is to download the code onto your computer.
 
-The easiest way to do this is with the [Gruntwork Installer](https://github.com/gruntwork-io/gruntwork-installer)
+The easiest way to do this is with the [Gruntwork Installer](https://github.com/tnn-gruntwork-io/gruntwork-installer)
 (note, you'll need to replace `<VERSION>` below with a version number from the [releases
-page](https://github.com/gruntwork-io/bash-commons/releases)):
+page](https://github.com/tnn-gruntwork-io/bash-commons/releases)):
 
 ```bash
 gruntwork-install \
-  --repo https://github.com/gruntwork-io/bash-commons \
+  --repo https://github.com/tnn-gruntwork-io/bash-commons \
   --module-name bash-commons \
   --tag <VERSION>
 ```
@@ -52,7 +52,7 @@ override the owner of the install dir using the `owner` and `group` params:
 
 ```bash
 gruntwork-install \
-  --repo https://github.com/gruntwork-io/bash-commons \
+  --repo https://github.com/tnn-gruntwork-io/bash-commons \
   --module-name bash-commons \
   --tag <VERSION> \
   --module-param dir=/foo/bar \
@@ -64,7 +64,7 @@ If you don't want to use the Gruntwork Installer, you can use `git clone` to get
 copy it to it's final destination manually:
 
 ```bash
-git clone --branch <VERSION> https://github.com/gruntwork-io/bash-commons.git
+git clone --branch <VERSION> https://github.com/tnn-gruntwork-io/bash-commons.git
 
 sudo mkdir -p /opt/gruntwork
 cp -r bash-commons/modules/bash-commons/src /opt/gruntwork/bash-commons
@@ -93,10 +93,10 @@ bash /opt/gruntwork/bash-commons/dynamic-ubuntu-wait.sh
 Alternatively, you can call the script without installing by curling it during your existing provisioning/automated installation process:
 
 ```bash
-curl -LsS https://raw.githubusercontent.com/gruntwork-io/bash-commons/[VERSION]/modules/bash-commons/src/dynamic-ubuntu-wait.sh | bash`
+curl -LsS https://raw.githubusercontent.com/tnn-gruntwork-io/bash-commons/[VERSION]/modules/bash-commons/src/dynamic-ubuntu-wait.sh | bash`
 ```
 
-Where `[VERSION]` could be: `v0.0.3`. The latest release can be found [here](https://github.com/gruntwork-io/bash-commons/releases/latest)
+Where `[VERSION]` could be: `v0.0.3`. The latest release can be found [here](https://github.com/tnn-gruntwork-io/bash-commons/releases/latest)
 
 
 
@@ -253,7 +253,7 @@ Every function should be tested:
 ## License
 
 This code is released under the Apache 2.0 License. Please see 
-[LICENSE](https://github.com/gruntwork-io/bash-commons/tree/master/LICENSE) and 
-[NOTICE](https://github.com/gruntwork-io/bash-commons/tree/master/NOTICE) for more details.
+[LICENSE](https://github.com/tnn-gruntwork-io/bash-commons/tree/master/LICENSE) and 
+[NOTICE](https://github.com/tnn-gruntwork-io/bash-commons/tree/master/NOTICE) for more details.
 
 Copyright &copy; 2018 Gruntwork, Inc.

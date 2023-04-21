@@ -3,9 +3,9 @@ package integration_test
 import (
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/aws"
-	"github.com/gruntwork-io/terratest/modules/git"
-	"github.com/gruntwork-io/terratest/modules/packer"
+	"github.com/tnn-gruntwork-io/terratest/modules/aws"
+	"github.com/tnn-gruntwork-io/terratest/modules/git"
+	"github.com/tnn-gruntwork-io/terratest/modules/packer"
 )
 
 func TestDynamicUbuntuWait(t *testing.T) {
